@@ -599,9 +599,9 @@ EXTRA_CFLAGS += -DMARK_KERNEL_PFU
 else ifeq ($(CONFIG_PLATFORM_ARM_RPI), y)
 ## For Rpi3: use hardware floating, but not on the api
 EXTRA_CFLAGS += -mfloat-abi=softfp
-else
+#else
 ## For ARM ToolChain use Hardware FLOATING
-EXTRA_CFLAGS += -mfloat-abi=hard
+#EXTRA_CFLAGS += -mfloat-abi=hard
 endif
 endif
 
